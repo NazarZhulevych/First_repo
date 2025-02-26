@@ -7,8 +7,8 @@ def string_to_date(date_string):
 
 def prepare_user_list(user_data):
     for user in user_data:  # Iterate through the list of dictionaries
-        if "birthday" in user:  # Ensure the key exists
-            user["birthday"] = string_to_date(user["birthday"])  # Update the dictionary
+        if "birthday" in user:  # Ensure the key contains in list
+            user["birthday"] = string_to_date(user["birthday"])  # Replace value of key with updated value
     return user_data
 
 users = [
