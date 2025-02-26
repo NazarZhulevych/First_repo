@@ -1,3 +1,16 @@
-print("Hello world!")
+flavors = [
+    "Banana",
+    "Chocolate",
+    "Lemon",
+    "Pistachio",
+    "Raspberry",
+    "Strawberry",
+    "Vanilla",
+]
 
-my_change1 = True
+for i in range(len(flavors)):
+    for j in range(i + 1, len(flavors)):  # Ensures unique pairs
+        print(flavors[i] + ", " + flavors[j])
+            
+
+
