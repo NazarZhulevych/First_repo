@@ -13,4 +13,4 @@ def get_days_from_today(date: str) ->int:
 
 input_date = input("Введіть дату у форматі YYYY-MM-DD, (наприклад: 2012-12-12) :")
 
-print(get_days_from_today(input_date))
+print(f"Кількість днів між заданою датою і поточною датою: {get_days_from_today(input_date)}")

@@ -17,7 +17,7 @@ def find_next_weekday(start_date, weekday = 0):
 def prepare_user_list(user_data):
     prepared_list = []
     for user in user_data:
-        user["birthday"] = user["birthday"].replace("-", ".")
+        user["birthday"] = str(user["birthday"]).replace("-", ".")
         prepared_list.append({"name": user["name"], "birthday": string_to_date(user["birthday"])})
     return prepared_list
 
